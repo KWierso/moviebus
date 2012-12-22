@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title> Movie Transit </title>
+    <style>
+      section {
+        margin: 20px;
+        padding:5px;
+        border:1px solid black;
+      }
+      header {
+        font-weight:bolder;
+        font-size: larger;
+      } 
+      address {
+        margin-bottom:5px;
+        border-bottom: 1px black solid;
+      }
+      section > *:not(header) {
+        margin-left:20px;
+      }
+      div.movie:not(:last-child) {
+        border-bottom: 1px grey dashed;
+      }
+      div.movie:hover {
+        background-color:silver;
+        font-weight:bold;
+      }
+      div.times {
+        margin-left:20px;
+      }
+      span.time {
+        color: blue;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  
+  <body>
+    <div id="movieInfo"></div>
+  </body>
+</html>
